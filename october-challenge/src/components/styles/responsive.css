@@ -1,0 +1,31 @@
+@media only screen and (min-width: 600px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+    .header__options {
+        border: none;
+        flex: 0.9;
+        justify-content: flex-end;
+    }
+    .header__main > h1 {
+        margin-left: 15px;
+    }
+    .overview {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 90%;
+        flex-wrap: nowrap;
+    }
+    .overview__title{
+        width: 65vw;
+        display: flex;
+        margin-left: 0px;
+    }
+    .overview__content {
+        width: 90%;
+    }
+}
