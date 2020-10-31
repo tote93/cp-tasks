@@ -21,3 +21,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+october-challenge/.firebaserc
+
+october-challenge/.vscode/
+
+october-challenge/build/
+
+october-challenge/package-lock.json
+
+october-challenge/yarn.lock

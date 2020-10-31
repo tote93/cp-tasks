@@ -1,12 +1,12 @@
-.main{
+.main {
   display: flex;
   flex-flow: row wrap;
   width: 90%;
   align-items: center;
   justify-content: center;
 }
-.main  > div:nth-child(1):before {
-  content: '';
+.main > div:nth-child(1):before {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -16,8 +16,8 @@
   background: #008df8;
 }
 
-.main  > div:nth-child(2):before {
-  content: '';
+.main > div:nth-child(2):before {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -26,19 +26,23 @@
   border-radius: 5px 5px 0px 0px;
   background: #00a0f5;
 }
-  
-.main  > div:nth-child(3):before {
-  content: '';
+
+.main > div:nth-child(3):before {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 4px;
   border-radius: 5px 5px 0px 0px;
-  background: linear-gradient(45deg, rgba(248,172,106,1) 8%, rgba(232,97,140,1) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(248, 172, 106, 1) 8%,
+    rgba(232, 97, 140, 1) 100%
+  );
 }
-.main  > div:nth-child(4):before {
-  content: '';
+.main > div:nth-child(4):before {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -48,15 +52,19 @@
   background: #c70020;
 }
 
-.main  > div:nth-child(1):after {
+.main > div:nth-child(1):after {
   background: linear-gradient(90deg, transparent, #00a0f5, transparent);
 }
-.main  > div:nth-child(2):after {
+.main > div:nth-child(2):after {
   background: linear-gradient(90deg, transparent, #00a0f5, transparent);
 }
-.main  > div:nth-child(3):after {
-  background: linear-gradient(90deg, rgba(248,172,106,.3) 8%, rgba(232,97,140,.3) 100%);
+.main > div:nth-child(3):after {
+  background: linear-gradient(
+    90deg,
+    rgba(248, 172, 106, 0.3) 8%,
+    rgba(232, 97, 140, 0.3) 100%
+  );
 }
-.main  > div:nth-child(4):after {
+.main > div:nth-child(4):after {
   background: linear-gradient(90deg, transparent, #c70020, transparent);
 }
