@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>JL-January-Challengue-CP</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="app">
+        <div class="app__buttons">
+          <button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained app__button MuiButton-containedSecondary"
+            tabindex="0"
+            type="button"
+          >
+            <span class="MuiButton-label"
+              ><span class="MuiButton-startIcon MuiButton-iconSizeMedium"
+                ><svg
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+                  ></path></svg></span
+              >New List</span
+            ><span class="MuiTouchRipple-root"></span></button
+          ><button
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained app__button MuiButton-containedSecondary"
+            tabindex="0"
+            type="button"
+          >
+            <span class="MuiButton-label"
+              ><span class="MuiButton-startIcon MuiButton-iconSizeMedium"
+                ><svg
+                  class="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm2.46-7.12l1.41-1.41L12 12.59l2.12-2.12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14l-2.13-2.12zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"
+                  ></path></svg></span
+              >Delete All</span
+            ><span class="MuiTouchRipple-root"></span>
+          </button>
+        </div>
+        <div class="card">
+          <svg
+            class="MuiSvgIcon-root card__deleteCard"
+            focusable="false"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"
+            ></path>
+          </svg>
+          <div class="card__image">
+            <div class="card__title"><h3>tete</h3></div>
+          </div>
+          <div class="card__form">
+            <div class="MuiFormControl-root form__input">
+              <label
+                class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+                data-shrink="false"
+                >Add Item...</label
+              >
+              <div
+                class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl MuiInputBase-adornedEnd"
+              >
+                <input
+                  aria-invalid="false"
+                  autocomplete="off"
+                  type="text"
+                  maxlength="20"
+                  class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd"
+                  value=""
+                />
+                <div
+                  class="MuiInputAdornment-root MuiInputAdornment-positionEnd"
+                >
+                  <button
+                    class="MuiButtonBase-root MuiIconButton-root"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <span class="MuiIconButton-label"></span
+                    ><span class="MuiTouchRipple-root"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="todoList"></ul>
+            <button
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained card__deleteAll MuiButton-containedSecondary MuiButton-fullWidth"
+              tabindex="0"
+              type="button"
+            >
+              <span class="MuiButton-label"
+                ><span class="MuiButton-startIcon MuiButton-iconSizeMedium"
+                  ><svg
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"
+                    ></path></svg></span
+                >Delete All</span
+              ><span class="MuiTouchRipple-root"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/4.11.3/index.js"
+    integrity="sha512-TkRXtzcAdJ9Je/zfwrq48vYvMzk3QAFvTAPr2A0CJ8DsCcOl10Q40XSJPtsKGn+CoJqDguhSo/RDEEDW6zxq8g=="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/material-ui/4.11.3/index.min.js"
+    integrity="sha512-0HMKgNaQRiQjs71nRk8NmiMSWlUzz/cZFf3CSGSVZrysmH9SUAZaTYyXdkpfnSdpY/r50t0s2vlLrokvyW7pbA=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/controller.js/"></script>
+</html>
