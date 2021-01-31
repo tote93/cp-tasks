@@ -1,0 +1,97 @@
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10px 0 10px;
+  border-radius: 360px;
+  position: relative;
+}
+
+.todo__label {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  font-size: 23px;
+  transition: 0.5s ease-in-out;
+}
+.todo:hover {
+  transition: 0.5s ease-in-out;
+  background: #efeff0;
+}
+
+.todo__input {
+  flex: 0.1;
+  height: 30px;
+  position: relative;
+  cursor: pointer !important;
+}
+input[type="checkbox"]:checked {
+  opacity: 0.5;
+}
+
+.checked {
+  color: gray;
+  text-decoration: line-through;
+  text-decoration-thickness: from-font;
+}
+
+.todo__deleteTask {
+  animation: deleteAnimation 0.5s forwards;
+  height: 0px;
+}
+
+@keyframes deleteAnimation {
+  0% {
+    opacity: 1;
+    height: 30px;
+  }
+  100% {
+    opacity: 0;
+    height: 0px;
+  }
+}
+
+.todo__edit {
+  border: none;
+  font-size: 20px;
+  outline: none;
+  margin-left: 15px;
+  width: 100%;
+  flex: 0.8;
+  font-weight: 800;
+  position: relative;
+  border-radius: 360px;
+  padding: 0 10px 0 10px;
+  background: transparent;
+}
+
+.todo__edit:focus {
+  margin-left: 15px;
+  width: 100%;
+  flex: 0.8;
+  font-weight: 800;
+  position: relative;
+}
+.todoIcon {
+  flex: 0.2 !important;
+  transition: 0.5s ease-in-out !important;
+}
+
+.todoIcon--delete:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer !important;
+  color: red !important;
+  transition: 0.5s ease-in-out !important;
+}
+
+.todoIcon--confirm {
+  transition: 0.5s ease-in-out !important;
+  color: rgb(39, 91, 17) !important;
+}
+.todoIcon--confirm:hover {
+  transform: scale(1.1) !important;
+  cursor: pointer !important;
+  transition: 0.5s ease-in-out !important;
+}

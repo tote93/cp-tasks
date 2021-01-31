@@ -1,0 +1,55 @@
+.app {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.app::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  background: url("./assets/img/background.jpg");
+  background-size: cover;
+  filter: blur(2px);
+}
+.app::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 11;
+  background: url("./assets/img/rain.png");
+  animation: rain 0.7s infinite linear;
+}
+@keyframes rain {
+  0% {
+    background-position: 10% 0;
+  }
+
+  100% {
+    background-position: 40% 300%;
+  }
+}
+
+.app__button,
+.app__button--delete {
+  border-right: 50% !important;
+  position: fixed !important;
+  top: 85vh !important;
+  left: 10px !important;
+  z-index: 2000;
+}
+
+.app__button--delete {
+  top: 93vh !important;
+}
