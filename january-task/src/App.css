@@ -8,7 +8,7 @@
   z-index: 10;
 }
 
-/* .app::after {
+.app::after {
   content: "";
   position: absolute;
   left: 0;
@@ -30,7 +30,7 @@
   z-index: 11;
   background: url("./assets/img/rain.png");
   animation: rain 0.7s infinite linear;
-} */
+}
 @keyframes rain {
   0% {
     background-position: 10% 0;
