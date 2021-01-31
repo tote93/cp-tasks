@@ -10,6 +10,7 @@
   -moz-box-shadow: 0px 0px 55px 6px rgba(0, 0, 0, 0.9);
   box-shadow: 0px 0px 55px 6px rgba(0, 0, 0, 0.9);
   position: relative;
+  top: 5vh;
 }
 
 .card__image .card__title {

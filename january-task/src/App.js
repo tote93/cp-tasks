@@ -43,9 +43,6 @@ function App() {
 
   return (
     <div className="app">
-      {cardList.map((card, i) => (
-        <Card info={card} key={i} index={i} deleteCard={deleteCard} />
-      ))}
       <div className="app__buttons">
         <Button
           className="app__button"
@@ -58,7 +55,7 @@ function App() {
         </Button>
         {cardList.length > 0 && (
           <Button
-            className="app__button--delete"
+            className="app__button"
             variant="contained"
             color="secondary"
             startIcon={<DeleteForeverIcon />}
@@ -68,6 +65,11 @@ function App() {
           </Button>
         )}
       </div>
+
+      {cardList.map((card, i) => (
+        <Card info={card} key={i} index={i} deleteCard={deleteCard} />
+      ))}
+
       <Dialog
         open={open}
         onClose={handleClose}
